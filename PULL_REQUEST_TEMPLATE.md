@@ -1,4 +1,4 @@
-# Thank you from speaking at Jupyter Day <username>
+# \<username>, thank you for speaking at Jupyter Day!
 
 We are excited to hear about your work.  We need a little bit of information from you so we can update the conference website.
 
@@ -10,9 +10,10 @@ We are excited to hear about your work.  We need a little bit of information fro
 
 ## Optional Materials
 
-- [ ] __Optional__ short bio.
 
-  > Add links 
+- [ ] __Optional__ short bio.
+  
+  > Share a little about yourself, where you work, and your social media accounts.
   
 - [ ] __Optional__ conference repository.
 
