@@ -1,0 +1,14 @@
+name: John Smith
+github: johnsmith
+twitter: johnsmith
+linkedin: johnsmith1
+affiliation: Somewhere rad
+contact: johnsmith@gmail.com
+title: The title of the talk
+session: workshop
+abstract: |
+    Some markdown about the talk that was discussed in the Github issues.
+repository: 
+references:
+- google.com
+- facebook.com
