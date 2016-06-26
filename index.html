@@ -11914,10 +11914,30 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="FAQ">FAQ<a class="anchor-link" href="#FAQ">&#182;</a></h2><hr>
+<!--
+<div class="row">
+{% for sponsor in site.data.sponsors %}
+<div class="col col-md-3 col-xs-5 {% if forloop.first %}{% else %} col-md-offset-1 col-xs-offset-1{% endif %}">
+    <a href="{{sponsor.url}}" title="{{sponsor.name}}">
+        <img alt="{{sponsor.name}}" src="{{sponsor.src}}" width="100%"/>
+    </a>
+</div>
+{% endfor %}
+</div>
+-->
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sponsors">Sponsors<a class="anchor-link" href="#Sponsors">&#182;</a></h2><hr>
 <div class="row">
 {% for sponsor in site.data.sponsors %}
-<div class="col col-md-3 col-xs-6 {% if forloop.first %}{% else %} col-md-offset-1{% endif %}">
+<div class="col col-md-3 col-xs-5 {% if forloop.first %}{% else %} col-md-offset-1 col-xs-offset-1{% endif %}">
     <a href="{{sponsor.url}}" title="{{sponsor.name}}">
         <img alt="{{sponsor.name}}" src="{{sponsor.src}}" width="100%"/>
     </a>
@@ -11929,7 +11949,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[104]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -11965,10 +11985,10 @@ div#notebook {
 
 
 
-<div id="9f8e32af-f9ba-4cc8-8b17-a24c3b641493"></div>
+<div id="00e3f676-8af1-4d6c-8094-2cc058773cdf"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9f8e32af-f9ba-4cc8-8b17-a24c3b641493');
+var element = $('#00e3f676-8af1-4d6c-8094-2cc058773cdf');
 $(document).ready(function(){
     if (window.location.port != "8888"){
         $('.code_cell .input').css('display','none');
