@@ -11792,13 +11792,33 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="row">
+    <div class="col-md-9">
+        <h2>Call for Participation</h2>
+    </div>
+    <div class="col-md-3">
+        <a href="https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform"
+            style="text-decoration: none;  font-weight: 200;">
+        Open the form
+        </a>
+    </div>
+</div><hr>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
-<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform&quot;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<span class="n">IFrame</span><span class="p">(</span><span class="s2">&quot;https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform&quot;</span><span class="p">,</span><span class="n">width</span><span class="o">=</span><span class="s1">&#39;100%&#39;</span><span class="p">,</span><span class="n">height</span><span class="o">=</span><span class="s2">&quot;900&quot;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -11809,13 +11829,13 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[74]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[85]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
         <iframe
             width="100%"
-            height="600"
+            height="900"
             src="https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform"
             frameborder="0"
             allowfullscreen
@@ -11834,7 +11854,48 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Speakers">Speakers<a class="anchor-link" href="#Speakers">&#182;</a></h1><blockquote><p>Speaker information coming soon.</p>
+<h2 id="Sessions">Sessions<a class="anchor-link" href="#Sessions">&#182;</a></h2><hr>
+<div class="row">
+<div class="col col-md-4">
+    <h3>Morning</h3>
+    <blockquote>
+        <ul>
+            <li>Panel Discussion</li>
+            <li>Highlight Talks</li>
+            <li>Case Studies</li>
+            </ul>
+    </blockquote>
+    </div>
+<div class="col col-md-4">
+    <h3>Afternoon</h3>
+    <blockquote>
+        <ul>
+            <li>Workshops</li>
+            <li>Topics, Tools, &amp; Demos</li>
+            <li>Problems, Datasets &amp; Code</li>
+            </ul>
+        </blockquote>
+    </div>
+<div class="col col-md-4">
+    <h3>Late Afternoon</h3>
+    <blockquote>
+        <ul>
+            <li>Lightning Talks</li>
+            <li>Town Hall</li>
+            </ul>
+        </blockquote>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Speakers">Speakers<a class="anchor-link" href="#Speakers">&#182;</a></h2><hr>
+<blockquote><p>Speaker information coming soon.</p>
 </blockquote>
 <p>{% comment %}
 {% for speakers in site.data.speakers %}
@@ -11847,9 +11908,27 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Sponsors">Sponsors<a class="anchor-link" href="#Sponsors">&#182;</a></h2><hr>
+<div class="row">
+{% for sponsor in site.data.sponsors %}
+<div class="col col-md-3 {% if forloop.first %}{% else %} col-md-offset-1{% endif %}">
+    <a href="{{sponsor.url}}" title="{{sponsor.name}}">
+        <img alt="{{sponsor.name}}" src="{{sponsor.src}}" width="100%"/>
+    </a>
+</div>
+{% endfor %}
+</div>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -11885,10 +11964,10 @@ div#notebook {
 
 
 
-<div id="d531e1c8-ee27-44f0-b85b-2e64f58d4484"></div>
+<div id="07d7c4b6-4ff2-481b-92f6-631b94b59fb4"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#d531e1c8-ee27-44f0-b85b-2e64f58d4484');
+var element = $('#07d7c4b6-4ff2-481b-92f6-631b94b59fb4');
 $(document).ready(function(){
     if (window.location.port != "8888"){
         $('.code_cell .input').css('display','none');
