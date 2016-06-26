@@ -11768,7 +11768,8 @@ div#notebook {
                class="pull-left"
                style="width:4rem; margin: 0 1rem 0 0;"/>
            <p style="vertical-align: center; font-weight: 200; margin: 0 5px 0 10px;">
-               Check JupyterDay <br/>Atlanta out on
+               JupyterDay Atlanta<br/>
+               on Github
            </p>
         </a>
     </div>
@@ -11916,7 +11917,7 @@ div#notebook {
 <h2 id="Sponsors">Sponsors<a class="anchor-link" href="#Sponsors">&#182;</a></h2><hr>
 <div class="row">
 {% for sponsor in site.data.sponsors %}
-<div class="col col-md-3 {% if forloop.first %}{% else %} col-md-offset-1{% endif %}">
+<div class="col col-md-3 col-xs-6 {% if forloop.first %}{% else %} col-md-offset-1{% endif %}">
     <a href="{{sponsor.url}}" title="{{sponsor.name}}">
         <img alt="{{sponsor.name}}" src="{{sponsor.src}}" width="100%"/>
     </a>
@@ -11928,7 +11929,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -11964,10 +11965,10 @@ div#notebook {
 
 
 
-<div id="1c0c41cd-f42e-4384-9e9a-129a76ffde7b"></div>
+<div id="9f8e32af-f9ba-4cc8-8b17-a24c3b641493"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#1c0c41cd-f42e-4384-9e9a-129a76ffde7b');
+var element = $('#9f8e32af-f9ba-4cc8-8b17-a24c3b641493');
 $(document).ready(function(){
     if (window.location.port != "8888"){
         $('.code_cell .input').css('display','none');
