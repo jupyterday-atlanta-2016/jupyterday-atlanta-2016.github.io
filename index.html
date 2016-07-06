@@ -11809,10 +11809,10 @@ div#notebook {
     </div>
     <div class="col-md-offset-3 col-md-3">
         <p>
-        <a href="https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform"
+        <span href="https://docs.google.com/forms/d/14Kq65Xt8tWrUSMZF4vpnIYR96Vgs-7uLludFPn87EFU/viewform"
             style="text-decoration: none;  font-weight: 200;">
             Open the form
-        </a>
+        </span>
         </p>
         <a href="https://github.com/jupyterday-atlanta-2016/proposals/issues"
             style="text-decoration: none;  font-weight: 200;">            
@@ -11831,7 +11831,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">IPython.display</span> <span class="k">import</span> <span class="n">IFrame</span>
@@ -11846,7 +11846,7 @@ div#notebook {
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[15]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[20]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
@@ -11912,15 +11912,22 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Speakers">Speakers<a class="anchor-link" href="#Speakers">&#182;</a></h2><hr>
-<blockquote><p>Speaker information coming soon.</p>
+<div class="row">
+{% for speakers in site.data.speakers %}{% if speakers[0] != 'johnsmith' %}
+    {% assign info=speakers[1] %}
+
+
+<div class="col col-md-6">
+    <h3 class="text-center">{{info.name}} <small>@ {{info.affiliation}}</small></h3>
+    <img src="{{info.photo}}&s=80" style="border-radius: 50%"/>
+    <h4 class="text-center"><i>{{info.title}}</i></h4>
+    <hr/>
+    <div class="full-justify">{{info.abstract| markdownify}}</div>
+</div>
+ {% endif %}{% endfor %}
+</div><hr>
+<blockquote><p>More talks will be posted as speakers get accepted.</p>
 </blockquote>
-<p>{% comment %}
-{% for speakers in site.data.speakers %}
-    {% assign info=speakers[1] %}</p>
-<h3 id="{{info.title}}">{{info.title}}<a class="anchor-link" href="#{{info.title}}">&#182;</a></h3><p><del>speaker</del> <strong>{{info.name}}</strong> :: <strong><em>{{info.affiliation}}</em></strong></p>
-<p>{{info.abstract}}
-{% endfor %}
-{% endcomment %}</p>
 
 </div>
 </div>
@@ -11968,7 +11975,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">html</span>
@@ -11997,7 +12004,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
@@ -12010,7 +12017,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[75]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="nx">javascript</span>
@@ -12022,6 +12029,7 @@ div#notebook {
     <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">port</span> <span class="o">!=</span> <span class="s2">&quot;8888&quot;</span><span class="p">){</span>
         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggle-source&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">()</span>
     <span class="p">};</span>
+    
 <span class="p">})</span>
 </pre></div>
 
@@ -12037,10 +12045,10 @@ div#notebook {
 
 
 
-<div id="9b7d7283-698a-4f14-822c-a5a4e50047b9"></div>
+<div id="4e692e94-f734-4db2-9458-085cbdf65ac3"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9b7d7283-698a-4f14-822c-a5a4e50047b9');
+var element = $('#4e692e94-f734-4db2-9458-085cbdf65ac3');
 $(document).ready(function(){
     $('#toggle-source').click(function(){
         
@@ -12049,12 +12057,70 @@ $(document).ready(function(){
     if (window.location.port != "8888"){
         $('#toggle-source').click()
     };
+    
 })
 </script>
 </div>
 
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">file</span> _data/speakers/stephencwelch.yaml
+issue: None
+name: Stephen Welch
+photo: https://avatars3.githubusercontent.com/u/5165996?v=3
+github: stephencwelch
+twitter: stephencwelch
+linkedin: stephencwelch
+affiliation: Wheego Electric Cars, Inc.
+contact: stephencwelch@gmail.com
+title: Wandering in Four Dimensions
+
+abstract: Imaginary and complex numbers are perhaps the most underrated mathematical discovery ever. Functions of these variables are beautiful, elegant, and super useful in mathematics and science. However, as inherently four-dimensional objects, functions of complex variables are notoriously difficult to understand. With the help of the Jupyter Notebook, we’ll visualize our way through the deep and profound world of complex functions and Riemann Surfaces. This talk accompanies the final parts of the [YouTube series Imaginary Numbers Are Real](https://www.youtube.com/watch?v=pNp8Qf20-sA).
+
+bio: Stephen Welch is in love with science, engineering, and mathematics. Stephen runs a YouTube channel, Welch Labs, where he has way too much fun explaining technical topics. When he’s not making videos, Stephen works as a research engineer on machine learning problems, and tutors high school students in math and science. 
+
+
+repository: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real
+session: morning
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt"></div>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Overwriting _data/speakers/stephencwelch.yaml
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+</div>
 </div>
 </div>
 

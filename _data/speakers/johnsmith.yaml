@@ -1,5 +1,6 @@
 issue: 1
 name: John Smith
+photo: http://url.jpg
 github: johnsmith
 twitter: johnsmith
 linkedin: johnsmith1
@@ -9,7 +10,8 @@ title: The title of the talk
 session: workshop
 abstract: |
     Some markdown about the talk that was discussed in the Github issues.
-repository: 
+repository:
 references:
-- google.com
-- facebook.com
+- google.com/
+- facebook.com/johnsmith1
+- slideshare.net/johnsmith1

@@ -1,7 +1,0 @@
-- name: Continuum Anaytics
-  url: https://continuum.io
-  src: https://continuum.io/sites/all/themes/continuum_foundation/images/logos/logo-blue.svg
-
-- name: Jupyter Project
-  url: https://jupyter.org
-  src: https://jupyter.org/assets/nav_logo.svg
