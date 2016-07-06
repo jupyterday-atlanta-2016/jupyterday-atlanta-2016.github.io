@@ -1,0 +1,16 @@
+issue: None
+name: Stephen Welch
+github: stephencwelch
+twitter: stephencwelch
+linkedin: stephencwelch
+affiliation: Wheego Electric Cars, Inc.
+contact: stephencwelch@gmail.com
+title: # Wandering in Four Dimensions
+
+abstract: Imaginary and complex numbers are perhaps the most underrated mathematical discovery ever. Functions of these variables are beautiful, elegant, and super useful in mathematics and science. However, as inherently four-dimensional objects, functions of complex variables are notoriously difficult to understand. With the help of the Jupyter Notebook, we’ll visualize our way through the deep and profound world of complex functions and Riemann Surfaces. This talk accompanies the final parts of the YouTube series Imaginary Numbers Are Real (https://www.youtube.com/watch?v=pNp8Qf20-sA).
+
+bio: Stephen Welch is in love with science, engineering, and mathematics. Stephen runs a YouTube channel, Welch Labs, where he has way too much fun explaining technical topics. When he’s not making videos, Stephen works as a research engineer on machine learning problems, and tutors high school students in math and science. 
+
+
+repository: https://github.com/stephencwelch/Imaginary-Numbers-Are-Real
+session: morning
