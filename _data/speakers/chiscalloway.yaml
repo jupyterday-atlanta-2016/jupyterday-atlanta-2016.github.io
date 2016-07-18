@@ -1,0 +1,18 @@
+issue: None
+name: Chris Calloway
+photo: https://avatars3.githubusercontent.com/u/928188?v=3
+github: cbcunc
+twitter: 
+linkedin: chriscalloway
+affiliation: UNC RENCI
+contact: cbc@chriscalloway.org
+title: Using Jupyter Dashboard and ipympl for Tropical Storm Emergency Management
+
+
+abstract: ADCIRC is an ocean circulation model with storm surge and inundation byproducts. The model has been run hundreds of times to compile an estimation matrix. In a Jupyter Dashboard application, a map of storm surge from a typical tropical storm is displayed. Using ipwidgets, sliders on the dashboard allow emergency managers to vary the properties of the storm such as wind velocity and landfall location to update the map with likely storm surge computed from the estimation matrix. This dashboard is the first use of the recently released ipympl, which treats matplotlib figures as an ipwidget.
+
+bio: 
+
+
+repository: 
+session: morning
