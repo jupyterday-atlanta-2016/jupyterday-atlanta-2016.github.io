@@ -1,0 +1,18 @@
+issue: None
+name: Paco Nathan
+photo: https://avatars2.githubusercontent.com/u/57973?v=3
+github: ceteri
+twitter: pacoid 
+linkedin: ceteri
+affiliation: O'Reilly Media
+contact: pnathan@oreilly.com
+title: "Oriole: a new learning medium based on Jupyter + Docker"
+
+
+abstract: O'Reilly Media needed to provide a way for authors to use Jupyter notebooks to create professional publications. We also wanted to integrate video narration in the UX. The result is a unique new learning medium called Oriole, where Jupyter notebooks are used in the middleware, each viewer gets a 100% HTML experience (no download/install needed), the code and video are sync'ed together, and each web session has a Docker container running in the cloud. Tutorials are much quicker to publish than "traditional" books and video. This talk will show examples plus examine the system architecture, built from open source projects. We'll review feedback from authors working in this medium, i.e., how to teach more effectively through video + notebooks + containers.
+
+bio: 
+
+
+repository: 
+session: morning
