@@ -39,7 +39,7 @@ We can't follow up on an anonymous report with you directly, but we will take wh
 
 You can make a personal report by:
 
-  __Phone__: Call or message: 
+  __Phone__: Call or message: _Will be announced at conference_
 
   __In Person__: Contact a staff member, identified by STAFF badges
 
