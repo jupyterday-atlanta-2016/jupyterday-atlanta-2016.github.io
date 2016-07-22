@@ -53,4 +53,4 @@ Our team will help you contact hotel/venue security, local law enforcement, loca
 * __Law enforcement__: 404-894-2500 (Georgia Tech Campus Police)
 * __Local sexual assault hot line__: 404-894-9980 (GT Health Promotion)
 * __Medical Care__:  404-686-2435 (Emory Hospital Emergency)
-Taxi:  404-351-1111 (Checker Cab)
+* __Taxi__:  404-351-1111 (Checker Cab)
