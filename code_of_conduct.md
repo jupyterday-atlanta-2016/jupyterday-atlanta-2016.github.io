@@ -47,7 +47,7 @@ You can make a personal report by:
 
   __Email__: Send a message to projectjupyter@gmail.com 
 
-Our team will help you contact hotel/venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. 
+Our team will help you contact venue security, local law enforcement, local support services, provide escorts, or otherwise assist you to feel safe for the duration of the event. 
 
 * __Email__: projectjupyter@gmail.com, tony.fast@continuum.io
 * __Law enforcement__: 404-894-2500 (Georgia Tech Campus Police)
