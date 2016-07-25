@@ -9,3 +9,11 @@
 - name: NumFOCUS
   url: http://numfocus.org
   src: http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
+
+- name: O'Reilly Media
+  url: http://www.oreilly.com/
+  src: http://www.southeastlinuxfest.org/wp-content/uploads/2014/06/ORM_logo_box1_cmyk.jpg
+
+- name: Georgia Tech Research Institute
+  url: http://gtri.gatech.edu/
+  src: https://upload.wikimedia.org/wikipedia/en/1/1e/GTRI_Logo_2011.png
