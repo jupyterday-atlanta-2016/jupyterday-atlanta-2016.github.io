@@ -11748,6 +11748,20 @@ div#notebook {
   <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">chill</span><span class="p">():</span> 
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
@@ -11834,6 +11848,46 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Panel-Discussion-Open-Source-is-the-Medium-of-Innovation"><em><small>Panel Discussion</small></em> Open Source is the Medium of Innovation<a class="anchor-link" href="#Panel-Discussion-Open-Source-is-the-Medium-of-Innovation">&#182;</a></h2><hr>
+<div class="row speakers">
+{% for panelist in site.data.panelists %}{% if panelist[0] != 'johnsmith' %}
+    {% assign info=panelist[1] %}    
+<div class="col col-md-4">
+    <div style="margin-left: 10px; margin-right: 10px;">
+        <hr/>
+        <h3 class="text-center" id="{{speakers[0]}}">{{info.name}} <small> 
+        {% if info.twitter %}<a href="http://twitter.com/{{info.twitter}}" target="_blank"><i class="fa fa-twitter fa-4" aria-hidden="true"></i></a>{% endif %}
+        {% if info.github %}<a href="http://github.com/{{info.github}}" target="_blank"><i class="fa fa-github fa-4" aria-hidden="true"></i></a>{% endif %}
+        {% if info.linkedin %}<a href="http://linkedin.com/in/{{info.linkedin}}" target="_blank"><i class="fa fa-linkedin fa-4" aria-hidden="true"></i></a>{% endif %}
+        <br/>{{info.affiliation}}</small></h3>
+        <img src="{{info.photo}}" style="width: 80px; border-radius: 50%"/>
+        <hr/>
+        <div style="text-align: justify">{{info.bio| markdownify}}</div>
+    </div>
+</div>
+ {% endif %}{% endfor %}
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">chill</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Speakers">Speakers<a class="anchor-link" href="#Speakers">&#182;</a></h2><hr>
 <div class="row speakers">
 {% for speakers in site.data.speakers %}{% if speakers[0] != 'johnsmith' %}
@@ -11842,12 +11896,13 @@ div#notebook {
 
 <div class="col col-md-6">
     <div style="margin-{% cycle 'right', 'left' %}: 20px;">
+        <hr>
         <h3 class="text-center" id="{{speakers[0]}}">{{info.name}} <small> 
         {% if info.twitter %}<a href="http://twitter.com/{{info.twitter}}" target="_blank"><i class="fa fa-twitter fa-4" aria-hidden="true"></i></a>{% endif %}
         {% if info.github %}<a href="http://github.com/{{info.github}}" target="_blank"><i class="fa fa-github fa-4" aria-hidden="true"></i></a>{% endif %}
         {% if info.linkedin %}<a href="http://linkedin.com/in/{{info.linkedin}}" target="_blank"><i class="fa fa-linkedin fa-4" aria-hidden="true"></i></a>{% endif %}
         <br/>{{info.affiliation}}</small></h3>
-        <img src="{{info.photo}}&s=80" style="border-radius: 50%"/>
+        <img src="{{info.photo}}" style="border-radius: 50%"/>
         <h4 class="text-center"><i>{{info.title}}</i></h4>
         <hr/>
         <div style="text-align: justify">{{info.abstract| markdownify}}</div>
@@ -11867,37 +11922,21 @@ div#notebook {
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Sessions">Sessions<a class="anchor-link" href="#Sessions">&#182;</a></h2><hr>
-<div class="row">
-<div class="col col-md-4">
-    <h3>Morning</h3>
-    <blockquote>
-        <ul>
-            <li>Panel Discussion</li>
-            <li>Highlight Talks</li>
-            <li>Case Studies</li>
-            </ul>
-    </blockquote>
-    </div>
-<div class="col col-md-4">
-    <h3>Afternoon</h3>
-    <blockquote>
-        <ul>
-            <li>Workshops</li>
-            <li>Topics, Tools, &amp; Demos</li>
-            <li>Problems, Datasets &amp; Code</li>
-            </ul>
-        </blockquote>
-    </div>
-<div class="col col-md-4">
-    <h3>Late Afternoon</h3>
-    <blockquote>
-        <ul>
-            <li>Lightning Talks</li>
-            <li>Town Hall</li>
-            </ul>
-        </blockquote>
-    </div>
-</div>
+<ul>
+<li><strong>9:00am - 9:15am</strong> — Coffee and Donuts</li>
+<li><strong>9:15am - 10am</strong> — Panel discussion <em>Open Source is the Medium of Innovation</em></li>
+<li><strong>10am - 12pm</strong> — Case studies from Paco Nathan (O'Reilly Media), Chris Calloway(PyData Carolinas), Stephen Welch (Bob Ross of Machine Learning)</li>
+<li><strong>12pm - 1pm</strong> — Lunch provided by O'Reilly Media</li>
+<li><strong>1pm - 4:45pm</strong> — Workshops coding in several tracks with data sets, demos, code starting-points on GitHub<ul>
+<li><em>Up and Running</em>: Learning &amp; Deploying The Jupyter Stack</li>
+<li><em>Notebooks for Science</em>: Exploration, Publication, and Reproducibility</li>
+<li><em>BYOC</em>: Bring Your Code Own Code (to Jupyter)</li>
+</ul>
+</li>
+<li><strong>4:45pm - 5pm</strong> — Coffee Break</li>
+<li><strong>5pm - 5:30pm</strong> — Town Hall</li>
+</ul>
+
 </div>
 </div>
 </div>
@@ -11969,9 +12008,9 @@ div#notebook {
 <h2 id="Sponsors">Sponsors<a class="anchor-link" href="#Sponsors">&#182;</a></h2><hr>
 <div class="row">
 {% for sponsor in site.data.sponsors %}
-<div class="col col-md-3 col-xs-5 {% if forloop.first %}{% else %} col-md-offset-1 col-xs-offset-1{% endif %}">
+<div class="col col-md-3 col-xs-5 {% if forloop.first %}{% else %} col-md-offset-1 col-xs-offset-1{% endif %}" style="height: 100px;">
     <a href="{{sponsor.url}}" title="{{sponsor.name}}">
-        <img alt="{{sponsor.name}}" src="{{sponsor.src}}" width="100%"/>
+        <img alt="{{sponsor.name}}"  src="{{sponsor.src}}" class="img-responsive align-left"/>
     </a>
 </div>
 {% endfor %}
@@ -11981,7 +12020,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%%</span><span class="k">html</span>
@@ -12010,19 +12049,6 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;index.html&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="kn">from</span> <span class="nn">nbconvert</span> <span class="k">import</span> <span class="n">export_html</span><span class="p">;</span> <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;---</span><span class="se">\n</span><span class="s2">---</span><span class="se">\n</span><span class="s2">&quot;&quot;&quot;</span><span class="o">+</span><span class="n">export_html</span><span class="p">(</span><span class="s1">&#39;JupyterDay Atlanta.ipynb&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-
-</div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
 <div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -12030,7 +12056,7 @@ div#notebook {
 <span class="nx">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
     <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggle-source&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
         
-            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.code_cell .input&#39;</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
+            <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;.c4ode_cell .input&#39;</span><span class="p">).</span><span class="nx">toggle</span><span class="p">();</span>
     <span class="p">});</span>
     <span class="k">if</span> <span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">location</span><span class="p">.</span><span class="nx">port</span> <span class="o">!=</span> <span class="s2">&quot;8888&quot;</span><span class="p">){</span>
         <span class="nx">$</span><span class="p">(</span><span class="s1">&#39;#toggle-source&#39;</span><span class="p">).</span><span class="nx">click</span><span class="p">()</span>
@@ -12050,10 +12076,10 @@ div#notebook {
 
 
 
-<div id="c8391c10-fa80-470b-bdc8-fd55044aa429"></div>
+<div id="c66c4e3c-ffee-4777-b220-a59e3503090e"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#c8391c10-fa80-470b-bdc8-fd55044aa429');
+var element = $('#c66c4e3c-ffee-4777-b220-a59e3503090e');
 $(document).ready(function(){
     $('#toggle-source').click(function(){
         
