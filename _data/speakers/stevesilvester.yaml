@@ -9,7 +9,7 @@ title: JupyterLab Walkthrough
 
 abstract: >
     The audience should get a tour of the latest features of 
-    JupyterLab. The audience should learn about the intended 
+    [JupyterLab](https://github.com/jupyter/jupyterlab). The audience should learn about the intended 
     path of JupyterLab development and how third party extensions will be added. 
     There is no knowledge requirement, but experience with 
     the existing Jupyter Notebook would be beneficial. The preferred 
