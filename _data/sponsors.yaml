@@ -1,6 +1,6 @@
-- name: Continuum Anaytics
-  url: https://continuum.io
-  src: https://continuum.io/sites/all/themes/continuum_foundation/images/logos/logo-blue.svg
+- name: O'Reilly Media
+  url: http://www.oreilly.com/
+  src: http://www.southeastlinuxfest.org/wp-content/uploads/2014/06/ORM_logo_box1_cmyk.jpg
 
 - name: Jupyter Project
   url: https://jupyter.org
@@ -9,11 +9,16 @@
 - name: NumFOCUS
   url: http://numfocus.org
   src: http://www.numfocus.org/uploads/6/0/6/9/60696727/1457562110.png
-
-- name: O'Reilly Media
-  url: http://www.oreilly.com/
-  src: http://www.southeastlinuxfest.org/wp-content/uploads/2014/06/ORM_logo_box1_cmyk.jpg
-
+        
+- name: General Assembly
+  url: https://generalassemb.ly/atlanta
+  src: https://lh6.googleusercontent.com/--0BJE0-Lc94/AAAAAAAAAAI/AAAAAAAAAA4/faddGgzzIlg/s0-c-k-no-ns/photo.jpg
+        
 - name: Georgia Tech Research Institute
   url: http://gtri.gatech.edu/
-  src: https://upload.wikimedia.org/wikipedia/en/1/1e/GTRI_Logo_2011.png
+  src: https://upload.wikimedia.org/wikipedia/en/1/1e/GTRI_Logo_2011.png        
+
+- name: Continuum Anaytics
+  url: https://continuum.io
+  src: https://www.continuum.io/sites/default/files/Anaconda_stacked_RGB.png
+        
