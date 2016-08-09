@@ -12023,32 +12023,23 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Bring-Own-Code-To-Jupyter">Bring Own Code To Jupyter<a class="anchor-link" href="#Bring-Own-Code-To-Jupyter">&#182;</a></h3><div class="row science-workshop">
-{% for speakers in site.data.code %}
-    {% assign info=speakers[1] %}
-
+<h3 id="Up-and-Running-with-Jupyter">Up and Running with Jupyter<a class="anchor-link" href="#Up-and-Running-with-Jupyter">&#182;</a></h3><hr>
+<p>{{site.data.code.nickbollweg.abstract | markdownify}}</p>
 <div class="row">
-<div class="col col-md-10 pull-{% cycle 'left', 'right' %}">
-    <hr/>
-    <h3 class="text-center" id="{{speakers[0]}}">{{info.name}} <small> 
-    {% if info.twitter %}<a href="http://twitter.com/{{info.twitter}}" target="_blank"><i class="fa fa-twitter fa-4" aria-hidden="true"></i></a>{% endif %}
-    {% if info.github %}<a href="http://github.com/{{info.github}}" target="_blank"><i class="fa fa-github fa-4" aria-hidden="true"></i></a>{% endif %}
-    {% if info.linkedin %}<a href="http://linkedin.com/in/{{info.linkedin}}" target="_blank"><i class="fa fa-linkedin fa-4" aria-hidden="true"></i></a>{% endif %}
-    <br/>{{info.affiliation}}</small></h3>
-    <img src="{{info.photo}}" style="border-radius: 50%"/>
-    <h4 class="text-center"><a href="#{{info.title | replace(' ', '-')}}"><i>{{info.title}}</i></a></h4>
-    <hr/>
-    {% if info.abstract %}<div style="text-align: justify">{{info.abstract| markdownify}}</div>{% endif %}
-</div>
-</div>
-{% endfor %}
-</div>
+    <div class="col col-offset-xs-4 col-xs-2">
+        <img src="{{site.data.speakers.stevesilvester.photo}}" style="border-radius: 50%"/>
+    </div>
+    <div class="col col-xs-2">
+        <img src="{{site.data.code.nickbollweg.photo}}" style="border-radius: 50%;"/>
+    </div>
+</div><p>This workshop will organized by Jupyter developers, <strong>Steven Silvester</strong> and <strong>Nick Bollweg</strong>.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">chill</span><span class="p">()</span>
@@ -12192,10 +12183,10 @@ div#notebook {
 
 
 
-<div id="bd4a6949-0fc4-42d9-86d7-0b7997601152"></div>
+<div id="f6a5883c-5a0d-48b2-a815-5f47590b5401"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#bd4a6949-0fc4-42d9-86d7-0b7997601152');
+var element = $('#f6a5883c-5a0d-48b2-a815-5f47590b5401');
 $(document).ready(function(){
     $('#toggle-source').click(function(){
         
