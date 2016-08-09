@@ -1,0 +1,28 @@
+
+name: Eric Hein
+github: ehein6
+abstract: > 
+    In my research, I often want to explore a design space, sweeping out several 
+    parameter values to see which one delivers the best performance across a 
+    suite of trials. Extracting insight from hundreds of simulator output 
+    files is time consuming and error-prone. Visualizing the results of many 
+    experiments at once is the fastest way to validate the results and get 
+    feedback from my research group. In this talk I will showcase my end-to-end 
+    solution for visualizing simulation results with Jupyter notebook. The 
+    pandas and seaborn libraries are used to interactively generate 
+    paper-ready plots that are automatically labeled with the correct 
+    parameter names from the source data.
+    
+    In this short talk, audience members with a basic understanding of plotting 
+    in Jupyter will learn how to streamline the process of extracting, labeling, 
+    and visualizing data from raw text files.
+affiliation: Georgia Institute of Technology
+
+bio: > 
+    Eric is an ECE PhD student at Georgia Tech. His research in computer 
+    architecture involves designing near-memory accelerators for dynamic 
+    graph processing.
+
+photo: https://avatars3.githubusercontent.com/u/3900908?v=3&s=60
+title: Visualizing Simulation Results with Jupyter
+affiliation: Georgia Tech Research Institute

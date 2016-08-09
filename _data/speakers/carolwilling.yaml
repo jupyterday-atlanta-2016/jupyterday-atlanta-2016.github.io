@@ -1,0 +1,36 @@
+name: Carol Willing
+photo: https://avatars3.githubusercontent.com/u/2680980?v=3&s=80
+github: willingc
+twitter: willingcarol
+linkedin: carolwilling
+affiliation: Python Software Foundation, Project Jupyter, Cal Poly
+contact: willingc@gmail.com
+bio: >
+    Carol Willing is a Director of the [Python Software Foundation](https://www.python.org/psf/), a core developer
+    for [Project Jupyter](jupyter.org), and a [Research Software Engineer at Cal Poly San Luis
+    Obispo](http://www.calpoly.edu/).
+    
+
+    She&#39;s also Geek-In-Residence at [Fab Lab San Diego](http://www.fablabsd.org/) and co-organizes [PyLadies
+    San Diego](http://www.meetup.com/sd-pyladies/) and [San Diego Python](http://www.meetup.com/pythonsd/). She’s an active contributor to open source
+    projects, as a maintainer for OpenHatch and the Anita Borg Institute’s open
+    source projects. Combining a love of nature, the arts, and math with a BSE in
+    Electrical Engineering from Duke and an MS in Management from MIT, she’s
+    enjoyed creating and teaching others for over 20 years.
+    
+
+    She recently spoke at Grace Hopper Celebration 2015, PyCon 2015, PyCon Philippines 2016, 
+    Write/Speak/Code 2016, and SciPy 2016.
+    
+title: 'JupyterHub: A "Thing Explainer" overview'
+abstract: > 
+    JupyterHub brings the power of Jupyter notebooks to a group of users. University 
+    classes, workshops, and user groups can all benefit from notebooks being hosted on a 
+    common server. Configuring a JupyterHub server can be complex with many details. 
+
+    This presentation will give the audience an overview of JupyterHub's architecture 
+    and how to install and configure JupyterHub. Inspired by Randall Munroe's 
+    ("xkcd") [Thing Explainer](https://blog.xkcd.com/2015/05/13/new-book-thing-explainer/), 
+    we'll break down JupyterHub's complexity into simple understandable concepts. Whether 
+    you are new to JupyterHub or have some experience with it, you will leave this 
+    talk empowered to give JupyterHub a try.

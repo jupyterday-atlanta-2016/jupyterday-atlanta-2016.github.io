@@ -1,0 +1,27 @@
+name: Nils Persson
+github: Imperssonator
+abstract: >
+    People in all scientific disciplines spend an incredible amount 
+    of time reading and preparing published figures and graphs. Somewhere 
+    between 60-80% of all published scientific data is trapped in 
+    a .jpg file or a PDF somewhere on a publisher's server. We live in 
+    an era of learning from big data, yet arguably the biggest, 
+    most validated, most scrutinized data collected by humankind 
+    is hiding in images. Automated extraction of data from images of 
+    figures and graphs has received a smattering of attention over the 
+    past decades, but the time has never been more ripe for this 
+    technology to come to the fore. With a dataset of hundreds of 
+    figures from open-access journals, how much information can we 
+    extract armed with just a Jupyter Notebook and computer vision 
+    libraries? The answer: quite a lot.
+affiliation: Georgia Institute of Technology
+
+bio: >
+    Nils is a chemical engineering PhD student at the Georgia 
+    Institute of Technology whose thesis could best be compared to a 
+    wayward fishing vessel lost in the middle of the Pacific. It will 
+    eventually beach on a deserted island, which will be deemed novel 
+    regardless of others having discovered it before.
+
+photo: https://avatars2.githubusercontent.com/u/7574900?v=3&s=60
+title: Teaching a Computer to Read Science

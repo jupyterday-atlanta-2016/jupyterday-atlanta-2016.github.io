@@ -1,0 +1,37 @@
+name: David Nicholson
+photo: https://avatars1.githubusercontent.com/u/11934090?v=3&s=60
+title: Fit Your Learning Curves For Fun and Profit
+twitter: nicholdav
+github: NickleDave
+abstract: >
+    Scientists that study machine learning often plot the error 
+    of a model against the amount of data used to train that model. 
+    Such plots are known as learning curves or validation curves. 
+    In 1994, Cortes et al. proposed a method for fitting these curves 
+    with an exponential decay function. Their method provides a 
+    way to predict how different models stack up against each other. 
+    Importantly, it can avoid the computationally expensive process of 
+    estimating error for large training sets. With help from a Jupyter notebook, 
+    I will introduce exponential decay functions and give a brief 
+    derivation of Cortes et al.'s method. Then I will demonstrate how 
+    to fit learning curves with their model, using the data sets built 
+    into the Sci-Kit Learn library. I will also demonstrate some 
+    less-than-ideal fits using my own (lovely) data. Lastly I will 
+    discuss how it might be possible to detect statistically 
+    significant differences between models using the fit parameters.
+
+affiliation: Emory University
+contact: nicholdav@gmail.com
+url: www.nicholdav.info
+bio: >
+    Hey, I'm David Nicholson. I am a neuroscientist (grad student) at Emory 
+    University in Atlanta, Georgia. I work in Sam Sober's lab in the 
+    Biology department. We study songbirds as a model system to understand 
+    how the brain learns and produces vocalizations. My main project focuses 
+    on figuring out what parts of the brain connect with each other, using 
+    standard techniques and newer viral methods. My side project 
+    involves using machine learning to automate processes in the lab. 
+    For that I write code in Python, Matlab, occassionally Javascript/Java/C++. 
+    Sometimes when I get some free time I dance salsa and bachata. Merengue after 2:00 A.M.
+
+

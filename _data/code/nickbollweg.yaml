@@ -1,0 +1,21 @@
+name: Nick Bollweg
+abstract: >
+    The Jupyter stack is built from the ground up to be extensible and hackable, but 
+    Jupyter is a big planet with many moons. Let's learn about and build tools and 
+    approaches for getting started, testing, and distribution of Jupyter extensions. 
+    After a run-down of the extension points (sanctioned and otherwise) within the existing 
+    architecture, we'll want to hear about existing extensions to the notebook server, 
+    the current notebook JS application, nbviewer, and JupyterHub... and start looking at 
+    next-generation tools like JupyterLab.
+
+affiliation: Project Jupyter
+
+bio: >
+    Nick Bollweg is a Software Developer at [Continuum Analytics](https://continuum.io), working
+    on open source tools and products in Python and Javascript for making Jupyter more 
+    adoptable by end users and organizations. Based out of Atlanta, he pitches in 
+    on [PyData Atlanta](http://www.meetup.com/PyData-Atlanta)
+
+photo: https://avatars1.githubusercontent.com/u/45380?v=3&s=80
+github: bollwyvl
+affiliation: Continuum Analytics
